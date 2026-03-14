@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <circle cx="50" cy="50" r="45" fill="#ea580c"/>
+  <path d="M50 10 C50 10 50 90 50 90" stroke="#1e3a8a" stroke-width="2"/>
+  <path d="M10 50 C10 50 90 50 90 50" stroke="#1e3a8a" stroke-width="2"/>
+  <path d="M15 25 C30 40 70 40 85 25" stroke="#1e3a8a" stroke-width="2" fill="none"/>
+  <path d="M15 75 C30 60 70 60 85 75" stroke="#1e3a8a" stroke-width="2" fill="none"/>
+  <circle cx="50" cy="50" r="45" stroke="#1e3a8a" stroke-width="3"/>
+  <text x="50" y="55" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="white">PH</text>
+</svg>
