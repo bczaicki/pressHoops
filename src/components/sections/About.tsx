@@ -9,7 +9,7 @@ export function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Photo placeholder */}
           <div className="bg-gradient-to-br from-primary to-primary-light rounded-2xl aspect-square flex items-center justify-center">
-            <img src="/logo.png" alt="Trainer" className="h-32 w-32 opacity-50" />
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Trainer" className="h-32 w-32 opacity-50" />
           </div>
 
           {/* Bio */}

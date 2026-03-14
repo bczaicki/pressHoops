@@ -1,5 +1,5 @@
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline'
+  variant?: 'primary' | 'secondary' | 'outline' | 'gold'
   size?: 'sm' | 'md' | 'lg'
   href?: string
 }
@@ -8,6 +8,7 @@ const variantClasses = {
   primary: 'bg-primary text-white hover:bg-primary-light',
   secondary: 'bg-secondary text-white hover:bg-secondary-light',
   outline: 'border-2 border-white text-white hover:bg-white hover:text-primary',
+  gold: 'bg-gold text-midnight hover:bg-gold-light',
 }
 
 const sizeClasses = {
@@ -24,7 +25,7 @@ export function Button({
   className = '',
   ...props
 }: ButtonProps) {
-  const classes = `inline-block font-semibold rounded-lg transition-colors duration-200 cursor-pointer ${variantClasses[variant]} ${sizeClasses[size]} ${className}`
+  const classes = `inline-block font-semibold rounded-md transition-colors duration-200 cursor-pointer ${variantClasses[variant]} ${sizeClasses[size]} ${className}`
 
   if (href) {
     return (

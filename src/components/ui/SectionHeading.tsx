@@ -7,7 +7,7 @@ interface SectionHeadingProps {
 export function SectionHeading({ title, subtitle, light = false }: SectionHeadingProps) {
   return (
     <div className="text-center mb-12">
-      <h2 className={`text-3xl md:text-4xl font-bold mb-4 ${light ? 'text-white' : 'text-primary-dark'}`}>
+      <h2 className={`heading-display text-3xl md:text-4xl font-bold mb-4 ${light ? 'text-white' : 'text-primary-dark'}`}>
         {title}
       </h2>
       {subtitle && (
@@ -15,7 +15,7 @@ export function SectionHeading({ title, subtitle, light = false }: SectionHeadin
           {subtitle}
         </p>
       )}
-      <div className={`w-16 h-1 mx-auto mt-4 rounded ${light ? 'bg-accent' : 'bg-secondary'}`} />
+      <div className="divider-gold mx-auto mt-4" />
     </div>
   )
 }

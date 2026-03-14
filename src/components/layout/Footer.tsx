@@ -8,7 +8,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src="/logo.png" alt={siteConfig.name} className="h-10 w-10" />
+              <img src={`${import.meta.env.BASE_URL}logo.png`} alt={siteConfig.name} className="h-10 w-10" />
               <span className="font-bold text-xl">{siteConfig.name}</span>
             </div>
             <p className="text-gray-400">{siteConfig.description}</p>

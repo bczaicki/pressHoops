@@ -17,11 +17,11 @@ export function Navbar() {
         isScrolled ? 'bg-primary-dark/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="mx-auto px-4 sm:px-6 lg:px-12 xl:px-16">
+        <div className="navbar-bar flex items-center justify-between">
           <a href="#" className="flex items-center gap-2">
-            <img src="/logo.png" alt={siteConfig.name} className="h-10 w-10" />
-            <span className="text-white font-bold text-xl">{siteConfig.name}</span>
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt={siteConfig.name} className="navbar-logo" />
+            <span className="navbar-brand text-white font-bold">{siteConfig.name}</span>
           </a>
 
           {/* Desktop nav */}

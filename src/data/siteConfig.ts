@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: 'Press Hoops',
-  tagline: 'Elevate Your Game',
+  tagline: 'Built for the Next Level',
   description:
-    'Private basketball training designed to take your skills to the next level. From fundamentals to advanced techniques, we build complete players.',
+    'Private training in a premier facility. Personalized coaching that develops complete players.',
   calendlyUrl: 'https://calendly.com/your-link-here',
   contact: {
     email: 'info@presshoops.com',
