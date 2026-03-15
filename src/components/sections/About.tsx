@@ -3,21 +3,22 @@ import { SectionHeading } from '../ui/SectionHeading'
 
 export function About() {
   return (
-    <section id="about" className="py-20 bg-gray-50">
+    <section id="about" className="section-cream py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading title={siteConfig.about.heading} />
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Photo placeholder */}
-          <div className="bg-gradient-to-br from-primary to-primary-light rounded-2xl aspect-square flex items-center justify-center">
-            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Trainer" className="h-32 w-32 opacity-50" />
+          {/* Coach photo */}
+          <div>
+            <img
+              src={`${import.meta.env.BASE_URL}coach.jpg`}
+              alt="Coach Evan Dougherty"
+              className="rounded-2xl shadow-lg w-full object-cover"
+            />
           </div>
 
           {/* Bio */}
-          <div>
-            <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              {siteConfig.about.bio}
-            </p>
-            <ul className="space-y-3">
+          <div className="animate-fade-up">
+            <ul className="space-y-3 mb-6">
               {siteConfig.about.credentials.map((cred) => (
                 <li key={cred} className="flex items-center text-gray-700">
                   <span className="w-2 h-2 bg-secondary rounded-full mr-3 flex-shrink-0" />
@@ -25,6 +26,11 @@ export function About() {
                 </li>
               ))}
             </ul>
+            {siteConfig.about.bio.split('\n\n').map((paragraph, i) => (
+              <p key={i} className="text-gray-700 text-lg leading-relaxed mb-6">
+                {paragraph}
+              </p>
+            ))}
           </div>
         </div>
       </div>
