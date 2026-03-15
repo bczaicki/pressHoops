@@ -1,25 +1,43 @@
 import type { Service } from '../../data/services'
-import { Card } from './Card'
 
 interface ServiceCardProps {
   service: Service
+  index?: number
 }
 
-export function ServiceCard({ service }: ServiceCardProps) {
+export function ServiceCard({ service, index = 0 }: ServiceCardProps) {
+  const delayClass = index === 0 ? '' : index === 1 ? 'delay-2' : 'delay-4'
+
   return (
-    <Card className="text-center hover:shadow-xl transition-shadow duration-300">
-      <div className="text-5xl mb-4">{service.icon}</div>
-      <h3 className="text-xl font-bold text-primary-dark mb-2">{service.title}</h3>
-      <p className="text-gray-600 mb-4">{service.description}</p>
-      <p className="text-2xl font-bold text-secondary mb-4">{service.price}</p>
-      <ul className="text-left space-y-2">
+    <div
+      className={`animate-fade-up ${delayClass} group relative rounded-2xl bg-navy-light/60 border border-steel/20 p-8 transition-all duration-300 hover:shadow-gold-glow hover:border-gold/30`}
+    >
+      {/* Gold top accent */}
+      <div className="absolute inset-x-8 top-0 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent" />
+
+      {/* Label */}
+      <span className="text-label text-gold mb-4 block">{service.label}</span>
+
+      {/* Title */}
+      <h3 className="heading-display text-3xl text-ice mb-3">{service.title}</h3>
+
+      {/* Description */}
+      <p className="text-ice/70 leading-relaxed mb-6">{service.description}</p>
+
+      {/* Price */}
+      <p className="text-stat text-2xl text-gradient-gold mb-6">{service.price}</p>
+
+      {/* Features */}
+      <ul className="space-y-3">
         {service.features.map((feature) => (
-          <li key={feature} className="flex items-center text-gray-700">
-            <span className="text-secondary mr-2">&#10003;</span>
+          <li key={feature} className="flex items-center text-ice/80 text-sm">
+            <span className="mr-3 flex h-5 w-5 items-center justify-center rounded-full bg-gold/15 text-gold text-xs flex-shrink-0">
+              ✓
+            </span>
             {feature}
           </li>
         ))}
       </ul>
-    </Card>
+    </div>
   )
 }

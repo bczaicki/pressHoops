@@ -16,7 +16,7 @@ export const Default: Story = {
       description: 'One-on-one training sessions focused on your specific goals.',
       price: '$75/session',
       features: ['Customized plan', 'Video analysis', 'Skill assessment', '60 minutes'],
-      icon: '🏀',
+      label: '1-on-1 Training',
     },
   },
 }
