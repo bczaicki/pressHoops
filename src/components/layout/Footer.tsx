@@ -19,7 +19,6 @@ export function Footer() {
             <h3 className="font-bold text-lg mb-4">Contact</h3>
             <div className="space-y-2 text-gray-400">
               <p>{siteConfig.contact.email}</p>
-              <p>{siteConfig.contact.phone}</p>
               <p>{siteConfig.contact.location}</p>
             </div>
           </div>
@@ -30,12 +29,6 @@ export function Footer() {
             <div className="flex gap-4">
               <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-colors">
                 Instagram
-              </a>
-              <a href={siteConfig.social.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-colors">
-                Twitter
-              </a>
-              <a href={siteConfig.social.youtube} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-colors">
-                YouTube
               </a>
             </div>
           </div>
