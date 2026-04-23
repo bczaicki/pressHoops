@@ -1,22 +1,19 @@
 export const siteConfig = {
   name: 'Press Hoops',
-  tagline: 'Built for the Next Level',
+  tagline: 'Smarter Basketball Training Starts Here.',
   description:
-    'Private training in a premier facility. Personalized coaching that develops complete players.',
-  calendlyUrl: 'https://calendly.com/your-link-here',
+    'Game-based training that develops decision-making, confidence, and skills that transfer directly to competition.',
+  calendlyUrl: 'https://calendly.com/dougherty-presshoops',
   contact: {
-    email: 'info@presshoops.com',
-    phone: '(555) 123-4567',
-    location: 'Chicago, IL',
+    email: 'dougherty@presshoops.com',
+    location: 'Bend, OR',
   },
   social: {
     instagram: 'https://instagram.com/presshoops',
-    twitter: 'https://twitter.com/presshoops',
-    youtube: 'https://youtube.com/@presshoops',
   },
   about: {
-    heading: 'Meet Coach Dougherty',
-    bio: `With 14 years of experience, Coach Evan Dougherty understands what it takes to develop elite basketball talent. He guides athletes through enhancing fundamentals, deeper game analysis, personalized training plans, and building a winning mentality.\n\nAs head coach of the Caldera Wolfpack men's varsity team, Coach Dougherty's philosophy has shaped an entire youth development program for his players as they progress. Now, Press Hoops offers exclusive 1-on-1 lessons, group clinics, and camps designed to elevate every aspect of your athlete's game.`,
+    heading: 'Train the Game. Not Just Drills.',
+    bio: `Basketball is a game of decisions.\n\nPress Hoops delivers training environments that are designed to look like the real game so players learn how to read defenders, find space, and apply skills under pressure.\n\nInstead of long lines and repetitive drills, athletes learn through small-sided games, competition, and guided coaching.`,
     credentials: [
       '14 years of coaching experience',
       'Head Coach — Caldera Wolfpack Varsity',
