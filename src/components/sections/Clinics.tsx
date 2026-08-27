@@ -4,7 +4,7 @@ import { ClinicCard } from '../ui/ClinicCard'
 
 export function Clinics() {
   return (
-    <section id="clinics" className="section-cream py-24">
+    <section id="clinics" className="bg-surface py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title="Upcoming Clinics"
