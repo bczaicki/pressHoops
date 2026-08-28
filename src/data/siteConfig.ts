@@ -22,6 +22,7 @@ export const siteConfig = {
     ],
   },
   navLinks: [
+    { label: 'Clinics', href: '#clinics' },
     { label: 'About', href: '#about' },
     { label: 'Services', href: '#services' },
     { label: 'Book a Session', href: '#book' },
